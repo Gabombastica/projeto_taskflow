@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+<h1> Formulário de trabalho </h1>
+<form action="{{url_for('criar_atividade')}}" method="post">
+
+<label>
+    Nome da Atividade:
+    <input name="form_nome" type="text" placeholder="Digite o nome da atividade" required>
+</label>
+<br>
+<br>
+
+<label>
+    Descrição da Atividade: <br>
+    <textarea name="form_descricao" rows="10" cols="50" placeholder="Digite a descrição" required> </textarea>
+</label>
+<br>
+<br>
+
+<label>
+    Data da Atividade: <br>
+    <input name="form_data" type="date" required>
+</label>
+<br>
+<br>
+
+<label>
+    Prioridade da Atividade: <br>
+    <input name="form_prioridade" value="1" type="radio" required>
+    Baixa
+</label>
+
+<label>
+    <input name="form_prioridade" value="2" type="radio" required>
+    Médio
+</label>
+
+<label>
+    <input name="form_prioridade" value="3" type="radio" required>
+    Alta
+</label>
+<br>
+<br>
+
+<label>
+    Categoria da Atividade: <br>
+    <input name="form_categoria" value="1" type="checkbox" >
+    Palestra
+</label>
+
+<label>
+    <input name="form_categoria" value="2" type="checkbox">
+    Reunião
+</label>
+
+<label>
+    <input name="form_categoria" value="3" type="checkbox">
+    Jurídico
+</label>
+
+<label>
+    <input name="form_categoria" value="4" type="checkbox">
+    Lazer
+</label>
+<br>
+<br>
+
+<button type="submit" style="background-color: pink"> Enviar Formulário </button>
+<button type="reset" style="background-color: pink"> Limpar Formulário </button>
+
+</form>
+
+{% endblock conteudo %}
