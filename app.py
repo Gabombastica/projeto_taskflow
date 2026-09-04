@@ -29,11 +29,11 @@ def criar_atividade():
         categoria_atividade = request.form.getlist('form_categoria')
 
         dados = {
-            'nome_atividade': nome_atividade,
-            'descricao_atividade': descricao_atividade,
-            'data_atividade': data_atividade,
-            'prioridade_atividade': prioridade_atividade,
-            'categoria_atividade': categoria_atividade
+            'nome': nome_atividade,
+            'descricao': descricao_atividade,
+            'data': data_atividade,
+            'prioridade': prioridade_atividade,
+            'categoria': categoria_atividade
         }
         print(f"dados cadastrados: {dados}")
         base_fake.append(dados)

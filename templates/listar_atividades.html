@@ -1,17 +1,30 @@
 {% extends 'base.html' %}
 {% block conteudo %}
 
-<h1> Listar atividades </h1>
+<div class="titulo_listar_atividades">
+    <h1> Listar atividades: </h1>
+</div>
 
-{{dados_atividade}} <br><br>
+<div class="pai_listar">
 
-{% for atividade in dados_atividade %}
-{{atividade.nome_atividade}} <br>
-{{atividade.descricao_atividade}} <br>
-{{atividade.data_atividade}} <br>
-{{atividade.prioridade_atividade}} <br>
-{{atividade.categoria_atividade}}
 
-{% endfor %} <br>
+    {% for atividade in dados_atividade %}
+
+    <div class="listar_atividades">
+        <h3> Nome: </h3>
+        {{atividade.nome}} <br>
+        <h3> Descrição: </h3>
+        {{atividade.descricao}} <br>
+        <h3> Data: </h3>
+        {{atividade.data}} <br>
+        <h3> Prioridade: </h3>
+        {{atividade.prioridade}} <br>
+        <h3> Categoria: </h3>
+        {{atividade.categoria}}
+    </div>
+
+
+    {% endfor %}
+</div>
 
 {% endblock conteudo %}

@@ -6,8 +6,8 @@
 
 body {
     font-family: Constantia, sans-serif;
-    margin: 10;
-    padding: 10; background-color: mistyrose;
+
+    background-color: mistyrose;
     background-image: url("https://i.pinimg.com/236x/a6/05/a3/a605a33ba27eecaa8d3aec360cb7a6f6.jpg");
 }
 
@@ -15,6 +15,7 @@ header {
     background-color: pink;
     color: palevioletred;
     padding: 15px 30px;
+    border-block-end: 2px solid darkgray;
 }
 
 nav a {
@@ -31,10 +32,13 @@ nav a:hover {
 main {
     padding: 30px;
     max-width: 900px;
+    height: auto;
     margin: 0 auto;
-    background: white;
+    background: floralwhite;
     margin-top: 30px;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
@@ -52,3 +56,33 @@ footer {
     margin-bottom: 10px;
 }
 
+.pai_listar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.listar_atividades {
+    width: 200px;
+    height: auto;
+    background: lightpink;
+    border-radius: 10px;
+    border: 5px solid palevioletred;
+    margin: 10px;
+    color: whitesmoke;
+}
+
+.titulo_listar_atividades {
+    color: palevioletred;
+    text-align: center;
+}
+
+.image_hello_kitty {
+    border-radius: 8px;
+}
+
+.image_inicio {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+}
