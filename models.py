@@ -12,5 +12,3 @@ Base = declarative_base()
 
 class Pessoa(Base):
     __tablename__ = 'pessoas'
-
-    #kkkkkkk
