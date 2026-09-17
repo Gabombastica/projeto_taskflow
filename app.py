@@ -26,14 +26,18 @@ def criar_atividade():
         descricao_atividade = request.form.get('form_descricao')
         data_atividade = request.form.get('form_data')
         prioridade_atividade = request.form.get('form_prioridade')
-        categoria_atividade = request.form.getlist('form_categoria')
+        tipo_atividade = request.form.getlist('form_tipo')
+        responsavel_atividade = request.form.get('form_responsavel')
+        recurso_atividade = request.form.get('form_recurso')
 
         dados = {
             'nome': nome_atividade,
             'descricao': descricao_atividade,
             'data': data_atividade,
             'prioridade': prioridade_atividade,
-            'categoria': categoria_atividade
+            'tipo': tipo_atividade,
+            'responsavel': responsavel_atividade,
+            'recurso': recurso_atividade
         }
         print(f"dados cadastrados: {dados}")
         base_fake.append(dados)

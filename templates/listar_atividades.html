@@ -2,7 +2,7 @@
 {% block conteudo %}
 
 <div class="titulo_listar_atividades">
-    <h1> Listar atividades: </h1>
+    <h1> Listar atividade: </h1>
 </div>
 
 <div class="pai_listar">
@@ -11,16 +11,20 @@
     {% for atividade in dados_atividade %}
 
     <div class="listar_atividades">
-        <h3> Nome: </h3>
+        <h3> Nome da Atividade: </h3>
         {{atividade.nome}} <br>
+        <h3> Nome do Responsável: </h3>
+        {{atividade.responsavel}} <br>
         <h3> Descrição: </h3>
         {{atividade.descricao}} <br>
-        <h3> Data: </h3>
+        <h3> Recursos: </h3>
+        {{atividade.recursos}} <br>
+        <h3> Data Agendada: </h3>
         {{atividade.data}} <br>
         <h3> Prioridade: </h3>
         {{atividade.prioridade}} <br>
-        <h3> Categoria: </h3>
-        {{atividade.categoria}}
+        <h3> Tipo: </h3>
+        {{atividade.tipo}}
     </div>
 
 

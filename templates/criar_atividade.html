@@ -13,14 +13,28 @@
 <br>
 
 <label>
-    Descrição da Atividade: <br>
-    <textarea name="form_descricao" rows="10" cols="50" placeholder="Digite a descrição" required> </textarea>
+    Nome do Responsável:
+    <input name="form_responsavel" type="text" placeholder="Digite o nome do responsável" required>
 </label>
 <br>
 <br>
 
 <label>
-    Data da Atividade: <br>
+    Descrição da Atividade: <br>
+    <textarea name="form_descricao" rows="10" cols="50" required> </textarea>
+</label>
+<br>
+<br>
+
+<label>
+    Recursos que serão utilizados na Atividade: <br>
+    <textarea name="form_recurso" rows="10" cols="30" required> </textarea>
+</label>
+<br>
+<br>
+
+<label>
+    Data da Atividade Agendada: <br>
     <input name="form_data" type="date" required>
 </label>
 <br>
@@ -45,24 +59,39 @@
 <br>
 
 <label>
-    Categoria da Atividade: <br>
-    <input name="form_categoria" value="1" type="checkbox" >
+    Tipo da Atividade: <br>
+    <input name="form_tipo" value="1" type="checkbox" >
     Palestra
 </label>
 
 <label>
-    <input name="form_categoria" value="2" type="checkbox">
+    <input name="form_tipo" value="2" type="checkbox">
     Reunião
 </label>
 
 <label>
-    <input name="form_categoria" value="3" type="checkbox">
+    <input name="form_tipo" value="3" type="checkbox">
     Jurídico
 </label>
 
 <label>
-    <input name="form_categoria" value="4" type="checkbox">
+    <input name="form_tipo" value="4" type="checkbox">
     Lazer
+</label>
+
+<label>
+    <input name="form_tipo" value="5" type="checkbox">
+    Estudos
+</label>
+
+<label>
+    <input name="form_tipo" value="6" type="checkbox">
+    Limpeza
+</label>
+
+<label>
+    <input name="form_tipo" value="7" type="checkbox">
+    Autocuidado
 </label>
 <br>
 <br>
