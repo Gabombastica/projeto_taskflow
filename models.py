@@ -1,6 +1,6 @@
 # Importar bibliotecas
 from sqlalchemy import create_engine, Column, Integer, String, DateTime, Date, ForeignKey
-from sqlalchemy.orm import relationship, sessionmaker, declarative_base
+from sqlalchemy.orm import relationship, sessionmaker, declarative_base, scoped_session
 
 # Base de dados - endereço
 engine = create_engine('mysql+pysql://root:senaisp@localhost:3306/taskflow')
