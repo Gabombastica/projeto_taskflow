@@ -18,7 +18,7 @@ def index():
 def pessoa():
     return render_template('pessoa.html')
 
-@app.route('/criar_pessoa'), methods = ['GET', 'POST']
+@app.route('/criar_pessoa', methods = ['GET', 'POST'])
 def criar_pessoa():
     # Verifica o metodo, se for GET vai para a página do Formulário
     if request.method == 'GET':
