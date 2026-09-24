@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+
+<h1> Cadastro de Usuário </h1>
+<form action="{{url_for('criar_atividade')}}" method="post">
+
+<label>
+    Nome do Usuário:
+    <input name="form_nome" type="text" placeholder="Digite o seu nome com pelo menos 1 sobrenome" required>
+</label>
+<br>
+<br>
+
+<label>
+    E-mail: <br>
+    <input name="form_email" placeholder="Digite seu e-mail" required>
+</label>
+<br>
+<br>
+
+<label>
+    Senha: <br>
+    <input name="form_email" placeholder="Digite sua senha" required>
+</label>
+<br>
+<br>
+
+
+<button type="submit" style="background-color: pink"> Enviar Formulário </button>
+<button type="reset" style="background-color: pink"> Limpar Formulário </button>
+
+</form>
+
+{% endblock conteudo %}

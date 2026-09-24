@@ -17,6 +17,11 @@ def index():
 def pessoa():
     return render_template('pessoa.html')
 
+@app.route('/criar_pessoa'), methods = ['GET', 'POST']
+def criar_pessoa():
+    if request.method == 'GET':
+        return render_template('criar_pessoa.html')
+
 
 @app.route('/atividade/criar', methods=['GET', 'POST'])
 def criar_atividade():
