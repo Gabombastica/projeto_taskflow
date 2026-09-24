@@ -60,5 +60,6 @@ class Recurso(Base):
 
     def __repr__(self):
         return f'Recurso {self.recurso}, {self.descricao}, {self.responsavel}, {self.criado_em}'
+    .
 
 

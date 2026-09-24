@@ -60,4 +60,4 @@ def listar_atividades():
 # Iniciar aplicação web
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0", port=5001)
-# Nada deve ser colocado abaixo
+# Nada deve ser colocado abaixo.
