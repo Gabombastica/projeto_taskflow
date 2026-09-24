@@ -20,6 +20,10 @@
 </nav> <img class="image_hello_kitty" src="https://pngfre.com/wp-content/uploads/hello-kitty-43.png" width="120" height="120">
 </header>
 
+{% for mensagem in get_flashed_messages() %}
+    {{mensagem}}
+{% endfor %}
+
 <main>
     {% block conteudo %}
     {% endblock conteudo %}
